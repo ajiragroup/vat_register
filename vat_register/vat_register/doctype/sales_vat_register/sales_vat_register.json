@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "format:SVB-{s_bill_date}-{s_vat_bno}",
+ "creation": "2022-06-22 14:35:41.078735",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_tpin",
+  "customer_name",
+  "s_bill_date",
+  "s_vat_bno",
+  "s_taxable_amount",
+  "s_vat",
+  "s_total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_tpin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer TPIN",
+   "length": 9,
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "s_bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "s_vat_bno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "VAT Bill No.",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "s_taxable_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Taxable Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "s_vat",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VAT",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "s_total",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales VAT Register",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-22 16:28:01.834189",
+ "modified_by": "Administrator",
+ "module": "VAT Register",
+ "name": "Sales VAT Register",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

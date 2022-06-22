@@ -1,2 +1,7 @@
-# vat_register
-Sales and Purchase VAT Register for Frappe/Erpnext (Nepal)
+## VAT Register
+
+Sales and Purchase VAT Register
+
+#### License
+
+MIT
